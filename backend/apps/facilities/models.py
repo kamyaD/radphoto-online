@@ -7,12 +7,14 @@ class Facility(models.Model):
     facility_number = models.CharField(
         max_length=50,
         unique=True,
+        editable=False,
     )
 
     registration_number = models.CharField(
         max_length=100,
         unique=True,
         blank=True,
+        null=True,
     )
 
     phone_number = models.CharField(

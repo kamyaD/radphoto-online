@@ -14,4 +14,24 @@ urlpatterns = [
         "auth/",
         include("apps.identity.urls"),
     ),
+    path(
+        "",
+        include("apps.facilities.urls"),
+    ),
+    path(
+        "",
+        include("apps.patients.urls"),
+    ),
+    path(
+        "",
+        include("apps.encounters.urls"),
+    ),
+    path(
+        "",
+        include("apps.investigations.urls"),
+    ),
+    path(
+        "",
+        include("apps.laboratory.urls"),
+    ),
 ]

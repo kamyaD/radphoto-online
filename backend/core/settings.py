@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "apps.encounters",
     "apps.investigations",
     "apps.audit",
+    "apps.laboratory",
 ]
 
 MIDDLEWARE = [
