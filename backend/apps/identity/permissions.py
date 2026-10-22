@@ -71,3 +71,31 @@ class HasFacilityRole(BasePermission):
             role__in=required_roles,
             is_active=True,
         ).exists()
+
+class IsSystemAdminOrFacilityAdmin(
+    BasePermission
+):
+    message = (
+        "System administrator or facility "
+        "administrator access required."
+    )
+
+    def has_permission(self, request, view):
+        if not (
+            request.user
+            and request.user.is_authenticated
+        ):
+            return False
+
+        if request.user.is_staff:
+            return True
+
+        return (
+            request.user
+            .facility_memberships
+            .filter(
+                role="FACILITY_ADMIN",
+                is_active=True,
+            )
+            .exists()
+        )
