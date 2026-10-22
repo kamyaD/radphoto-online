@@ -1,6 +1,9 @@
 # radphoto-online
 # RADPHOTO ONLINE — Backend API
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ee4cadb0-373a-4048-a502-7396a0e39e9e" />
+
+
 **See Your Health Clearly**
 
 RADPHOTO ONLINE is a healthcare technology platform designed to help healthcare facilities manage patient records, clinical encounters, diagnostic investigations, laboratory workflows, and related operational processes.
@@ -84,4 +87,3 @@ RADPHOTO ONLINE
            |-- Pathology
            |-- HL7 / FHIR
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ee4cadb0-373a-4048-a502-7396a0e39e9e" />
